@@ -1,0 +1,1054 @@
+*{
+    margin: 0; 
+    padding: 0;  
+}
+body{
+  background-image: url("../Pictures/wallpaper.jpg");
+}
+header{
+    margin: 0; 
+    padding: 0;  
+}
+#top-section{
+    padding: 0.5% 0;
+    background-color: rgba(255, 255, 255,0.96);
+    background-size: cover;
+}
+#left-section{
+    width: 30%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+ }
+ #right-section{
+    width:68%;
+    display: inline-block;
+ }
+ #top-section img{
+    width: 12%;
+    height: auto;
+    margin-left: 10%;
+    display: inline-block;
+ }
+ #top-section h1{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+ }
+ #top-section nav{
+   vertical-align: middle;
+ }
+ #top-section nav ul{
+    text-align: right;
+    list-style: none;
+ }
+ #top-section nav ul li{
+  display: inline-block;
+  padding-left: 2%;
+ }
+ #top-section nav ul li:nth-last-child(1){
+   padding-right: 2%;
+ }
+ #top-section nav ul li a{
+  color: #333333;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: normal;
+ }
+ #top-section nav ul li a:hover{
+  animation: drop-in 1800ms;
+  }
+main #itemImage img{
+    width:  80%;
+    height: auto;
+    margin-left: 10%;
+}
+#showingSections{
+  margin:0 10%;
+  padding: 0.5% 0;
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+#showingSections input{
+  margin: 0 0 0 2%;
+}
+#showingSections label{
+  font-family: 'Raleway', sans-serif;
+}
+#showingSections input:checked{
+  animation: pop .3s ease;
+} 
+
+#showingSections p, h3{
+  display: inline-block;
+}
+#showingSections h3{
+  margin-left: 15%;
+}
+#showingSections button{
+  margin-left: 0%;
+}
+#showingSections button {
+  margin-left: 2%;
+}
+#orderButton {
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  margin-left: 15%;
+  padding: 10px 20px;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+#orderButton:disabled {
+  pointer-events: none;
+}
+
+#orderButton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#orderButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+#orderButton:nth-last-child(1){
+  margin-left: 1%;
+}
+#pizza{
+  margin:0 10%;
+  background-color: white;
+  display: none;
+}
+#type{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    padding-top: 1.2%;
+    padding-left: 2%;
+}
+#infoPrice{
+    display: inline-block;
+    width: 39%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    vertical-align: top;
+    border-left: 1px dashed grey;
+}
+#size{
+    display: inline-block;
+    width: 50%;
+}
+#pizzaType{
+    display: inline-block;
+    width: 48%;
+}
+/* type pizza css*/
+#type label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+#type select{
+  display: block;
+  width: 80%;
+  float: left;
+  margin: 0 auto;
+  padding:6px;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #2e2e2e;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* quantity and price*/
+
+#infoPrice .rounded{
+    width: 35px;
+    height: 35px;
+    outline-style:initial;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgb(250, 250, 250);
+}
+#quantityPizza h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+#quantityButtons *{
+    width: 29%;
+    display: inline;
+}
+#quantityButtons p{
+    font-size: 30px;
+    padding: 0 2%;
+}
+#quantityPizza{
+    width: 40%;
+    display: inline-block;
+}
+#pricePizza{
+    width: 56%;
+    display: inline-block;
+    vertical-align: top;
+}
+#pricePizza h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+#pricePizza p{
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.add {
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #2b2b2b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  min-height: 40px;
+  padding: 1% 3%;
+  margin-top: 4%;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.add:disabled {
+  pointer-events: none;
+}
+
+.add:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.add:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+#infoPizza{
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+#ingredients{
+  margin-top: 4%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  display: none;
+}
+
+/*For pasta order*/
+
+#pasta{
+  margin:0 10%;
+  background-color: white;
+  display: none;
+}
+#typePasta1{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    padding-top: 1.2%;
+    padding-left: 2%;
+}
+#infoPricePasta{
+    display: inline-block;
+    width: 39%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    vertical-align: top;
+    border-left: 1px dashed grey;
+}
+#PastaType{
+    display: inline-block;
+    width: 48%;
+}
+/* type pasta css*/
+#typePasta1 label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+#typePasta1 select{
+  display: block;
+  width: 80%;
+  float: left;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  padding:6px;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #2e2e2e;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* quantity and price*/
+
+#infoPricePasta .rounded{
+    width: 35px;
+    height: 35px;
+    outline-style:initial;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgb(250, 250, 250);
+}
+#quantityPasta h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+#quantityButtonsPasta *{
+    width: 29%;
+    display: inline;
+}
+#quantityButtonsPasta p{
+    font-size: 30px;
+    padding: 0 2%;
+}
+#quantityPasta{
+    width: 40%;
+    display: inline-block;
+}
+#pricePasta{
+    width: 59%;
+    display: inline-block;
+    vertical-align: top;
+}
+#pricePasta h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+#pricePasta p{
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+#infoPasta{
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+#ingredientsPasta{
+  margin-top: 4%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  display: none;
+}
+.addPasta {
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #2b2b2b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  min-height: 40px;
+  padding: 1% 3%;
+  margin-top: 4%;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.addPasta:disabled {
+  pointer-events: none;
+}
+
+.addPasta:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.addPasta:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/*FOR DESSERTS*/
+
+#desserts{
+  margin:0 10%;
+  background-color: white;
+  display: none;
+}
+#typeDesserts1{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    padding-top: 1.2%;
+    padding-left: 2%;
+}
+#infoPriceDesserts{
+    display: inline-block;
+    width: 39%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    vertical-align: top;
+    border-left: 1px dashed grey;
+}
+#DessertsType{
+    display: inline-block;
+    width: 48%;
+}
+/* type desserts css*/
+#typeDesserts1 label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+#typeDesserts1 select{
+  display: block;
+  width: 80%;
+  float: left;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  padding:6px;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #2e2e2e;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* quantity and price*/
+
+#infoPriceDesserts .rounded{
+    width: 35px;
+    height: 35px;
+    outline-style:initial;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgb(250, 250, 250);
+}
+#quantityDesserts h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+#quantityButtonsDesserts *{
+    width: 29%;
+    display: inline;
+}
+#quantityButtonsDesserts p{
+    font-size: 30px;
+    padding: 0 2%;
+}
+#quantityDesserts{
+    width: 40%;
+    display: inline-block;
+}
+#priceDesserts{
+    width: 59%;
+    display: inline-block;
+    vertical-align: top;
+}
+#priceDesserts h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+#priceDesserts p{
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+#infoDesserts{
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+#ingredientsDesserts{
+  margin-top: 4%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  display: none;
+}
+.addDesserts {
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #2b2b2b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  min-height: 40px;
+  padding: 1% 3%;
+  margin-top: 4%;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.addDesserts:disabled {
+  pointer-events: none;
+}
+
+.addDesserts:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.addDesserts:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/*DRINKS*/
+
+#drinks{
+  margin:0 10%;
+  background-color: white;
+  display: none;
+}
+#typeDrinks1{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    padding-top: 1.2%;
+    padding-left: 2%;
+}
+#infoPriceDrinks{
+    display: inline-block;
+    width: 39%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    vertical-align: top;
+    border-left: 1px dashed grey;
+}
+#DrinksType{
+    display: inline-block;
+    width: 48%;
+}
+/* type desserts css*/
+#typeDrinks1 label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+#typeDrinks1 select{
+  display: block;
+  width: 80%;
+  float: left;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  padding:6px;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #2e2e2e;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* quantity and price*/
+
+#infoPriceDrinks .rounded{
+    width: 35px;
+    height: 35px;
+    outline-style:initial;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgb(250, 250, 250);
+}
+#quantityDrinks h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+#quantityButtonsDrinks *{
+    width: 29%;
+    display: inline;
+}
+#quantityButtonsDrinks p{
+    font-size: 30px;
+    padding: 0 2%;
+}
+#quantityDrinks{
+    width: 40%;
+    display: inline-block;
+}
+#priceDrinks{
+    width: 59%;
+    display: inline-block;
+    vertical-align: top;
+}
+#priceDrinks h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+#priceDrinks p{
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+#infoDrinks{
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+#ingredientsDrinks{
+  margin-top: 4%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  display: none;
+}
+.addDrinks {
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #2b2b2b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  min-height: 40px;
+  padding: 1% 3%;
+  margin-top: 4%;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.addDrinks:disabled {
+  pointer-events: none;
+}
+
+.addDrinks:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.addDrinks:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+#pizza, #pasta, #desserts, #drinks{
+  padding-bottom: 0%;
+}
+#pasta, #desserts, #drinks{
+  border-top: 1px dashed grey;
+}
+footer{
+  background: rgb(32, 36, 43);
+  padding: 0 20%;
+  margin: 0;
+}
+footer section{
+  width: 27%;
+  display: inline-block;
+  vertical-align: top;
+}
+footer section h3{
+  color: white;
+  font-family: Kanit;
+  font-weight: 400;
+}
+footer #follow nav ul li{
+  display: inline-block;
+  margin-left: 2%;
+}
+footer #follow nav ul li a{
+  font-size: 22px;
+}
+footer #follow nav ul li a:nth-last-child(1){
+  color: #1DA1F2;
+}
+footer #follow nav ul li a:nth-last-child(2){
+  color: #405DE6;
+}
+footer #follow nav ul li a:nth-last-child(3){
+  color: #4267B2;
+}
+footer #contactUs p{
+  padding:0;
+  margin-bottom: 2%;
+  color: rgb(171, 170, 173);
+  font-family: Work Sans;
+}
+footer #links nav ul li{
+  list-style-type: none;
+}
+footer #links nav ul li a{
+  text-decoration: none;
+  font-family: Work Sans;
+}
+footer div h3{
+  color: white;
+  font-size: 14px;
+  font-family: Work Sans;
+  font-weight: 400;
+  padding-bottom: 2%;
+  margin:0;
+}
+#form{
+  display:none;
+  position: fixed;
+  top:11%;
+  left:40%;
+  z-index: 10;
+  background-color: white;
+  width:30%;
+  height: 78%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 1%;
+}
+#form h1{
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+}
+#form p{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 400;
+}
+#form input{
+  width: 90%;
+  padding: 1%;
+  margin-bottom: 2%;  
+  margin-left: 5%;       
+}
+#form label{
+  margin-left: 5%;       
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.formButton{
+  background-color: #0a6bff;
+  border-radius: 4px;
+  border:0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.formButton:hover {
+  background-color: #065dd8;
+}
+#validation{
+  color: red;
+  font-size: 1px;
+  border-color: black;
+}
+.hamburger{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+  @keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes pop {
+    0% { opacity:0; }
+    75% {opacity:1; }
+    100% { transform: scale(1.2); }
+  }
+
+  @media (max-width: 980px){
+    #left-section h1{
+      font-size: 7vwx;
+    }
+    #left-section {
+      width: 100%;
+    }
+    #left-section img{
+      width: 8%;
+      margin-left: 1%;
+    }
+    .hamburger{
+      display: inline-block;
+      float:right;
+      font-size: 35px;
+      padding-top: 1%;
+      padding-right: 2%;
+      color:rgb(49, 48, 48);
+      text-decoration: none;
+      list-style-type: none;
+    }
+    .hamburger:visited{
+      color:rgb(49, 48, 48);
+    }
+    #right-section{
+      width: 100%;
+      display: none;
+    }
+    #top-section nav ul li a{
+      font-size: 25px;
+    }
+    #top-section nav ul{
+      padding: 0 15%;
+    }
+    #top-section nav ul li{
+      display: block;
+      z-index: 1;
+      text-align: center;
+      border-top: solid 1px rgb(49, 48, 48);
+      padding: 2% 0%;
+    }
+    #top-section nav ul li:nth-last-child(1) {
+      padding-right: 0;
+    }
+    main #itemImage img{
+      width: 100%;
+      margin: 0;
+    }
+    #ordering section{
+      margin: 0;
+    }
+    #total{
+      display: inline-block;
+    }
+    #showingSections label {
+      font-size: 3vw;
+    }
+    #showingSections label:nth-last-child(5) {
+      margin-right: 15%;
+    }
+    #showingSections input:nth-child(1) {
+      margin-left: 15%;
+    }
+    #showingSections h3 {
+      font-size: 4vw;
+      margin-left: 0%;
+      margin-top: 0.5%;
+    }
+    #orderButton{
+      font-size: 1.5vw;
+      padding: 1vw 2vw;
+    }
+    #infoPrice{
+      width: 100%;
+      border: none;
+    }
+    .addToTotalPrice{
+      display: inline-block;
+      width: 48%;
+      vertical-align: top;
+      padding-top: 4%;
+    }
+    #quantityPizza{
+      width: 25%;
+    }
+    #pricePizza{
+      width: 20%;
+      margin-left: 2%;
+    }
+    #type{
+      width: 100%;
+    }
+    .add:first-child{
+        margin-right: 2%;
+    }
+    #typePasta1{
+      width: 100%;
+    }
+    #infoPricePasta{
+      width: 100%;
+      border: none;
+    }
+    #quantityPasta{
+      width: 25%;
+    }
+    #pricePasta{
+      width: 20%;
+      margin-left: 2%;
+    }
+    #typeDesserts{
+      width: 100%;
+    }
+    #infoPriceDesserts{
+      width: 100%;
+      border: none;
+    }
+    #quantityDesserts{
+      width: 25%;
+    }
+    #priceDesserts{
+      width: 20%;
+      margin-left: 2%;
+    }
+    #typeDrinks{
+      width: 100%;
+    }
+    #infoPriceDrinks{
+      width: 100%;
+      border: none;
+    }
+    #quantityDrinks{
+      width: 25%;
+    }
+    #priceDrinks{
+      width: 20%;
+      margin-left: 2%;
+    }
+    footer{
+      padding: 0;
+      padding-left: 3%;
+    }
+    footer section{
+      margin-left: 1%;
+    }
+
+    #form{
+      top:11%;
+      left:35%;
+      width:40vw;
+      height: 75vw;
+    }
+    
+    #form h1{
+      font-size: 4vw;
+    }
+    #form p{
+      font-size: 2vw;
+    }
+    
+  }
+  @media (max-width: 465px){
+    .addToTotalPrice{
+      display:block;
+      width: 100%;
+      margin-left: 18%;
+    }
+    #showingSections{
+      margin: 0% 0%;
+    }
+    #showingSections input:nth-child(1){
+      margin-left: 1%;
+    }
+    input[type=checkbox] {
+      transform: scale(1);
+    }
+    #quantityPizza{
+      width: 50%;
+    }
+    #pricePizza{
+      width: 46%;
+      margin-left: 2%;
+    }
+    #type{
+      width: 100%;
+    }
+    .add:first-child{
+        margin-right: 2%;
+    }
+    #typePasta1{
+      width: 100%;
+    }
+    #infoPricePasta{
+      width: 100%;
+      border: none;
+    }
+    #quantityPasta{
+      width: 50%;
+    }
+    #pricePasta{
+      width: 46%;
+      margin-left: 2%;
+    }
+    #typeDesserts{
+      width: 100%;
+    }
+    #infoPriceDesserts{
+      width: 100%;
+      border: none;
+    }
+    #quantityDesserts{
+      width: 50%;
+    }
+    #priceDesserts{
+      width: 46%;
+      margin-left: 2%;
+    }
+    #typeDrinks{
+      width: 100%;
+    }
+    #infoPriceDrinks{
+      width: 100%;
+      border: none;
+    }
+    #quantityDrinks{
+      width: 50%;
+    }
+    #priceDrinks{
+      width: 46%;
+      margin-left: 2%;
+    }
+    #aboutInfo{
+      width: 100%;
+    }
+    #mainAbout p, h1{
+      text-align: center;
+    }
+    #aboutInfo p{
+      margin: 0 10%;
+      font-size: 3vw;
+    }
+    footer section{
+      width: 100%;
+    }
+    #form{
+      top:11%;
+      left:10%;
+      width:70vw;
+      height: 140vw;
+    }
+    body{
+      margin-right: 0; 
+      width: 100%;
+    }
+  }
+  

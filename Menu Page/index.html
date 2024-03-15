@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6a5b1aed9a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Logo/Logo for title bar.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Open+Sans:wght@400;500;600&family=Raleway:wght@200;300;400;500&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&family=Roboto+Slab:wght@300;400;500&family=Titillium+Web:wght@300;400;600&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>La Regina Menu</title>
+</head>
+<body>
+    <header>
+        <section id="top-section">
+            <div id="left-section">
+              <img src="../Logo/1.png" alt="Header logo La Regna Restaurant">
+              <h1>La Regina</h1>
+              <a href="#" class="hamburger" onclick="HamburgerClick()">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </div>      
+              
+              <div id="right-section">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="../Main Page/index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li>
+                      <a href="../Menu Page/index.html"><i class="fa-solid fa-clipboard"></i> Menu</a>
+                    </li>
+                    <li>
+                      <a href="../Order Page/index.html"><i class="fa-solid fa-basket-shopping"></i> Make an order</a>
+                    </li>
+                    <li>
+                      <a href="../About Us Page/index.html"><i class="fa-solid fa-wheat-awn-circle-exclamation"></i> About us</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </section>
+          <section id="headerImage">
+              <img src="../Pictures/Menu image.jpg" alt="Menu Poster Image">
+          </section>
+          <section id="secondNavHeader">
+              <nav class="fill">
+                  <ul>
+                      <li>
+                          <a href="#pizzaAnchor"><i class="fa-solid fa-pizza-slice"></i> Pizza</a>
+                      </li>
+                      <li>
+                          <a href="#pasta"><i class="fa-solid fa-bowl-food"></i> Pasta</a>
+                      </li>
+                      <li>
+                          <a href="#desserts"><i class="fa-solid fa-cookie"></i> Deserts</a>
+                      </li>
+                      <li>
+                          <a href="#drinks"><i class="fa-solid fa-whiskey-glass"></i> Drinks</a>
+                      </li>
+                  </ul>
+              </nav>
+          </section>
+    </header>
+    <main>
+      <section id="pizza">
+        <h1 class="sectionHeader" id="pizzaAnchor">Pizza</h1>
+        <hr class="sectionLine">
+        <article id="margharita">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/Margharita.png" alt="Margharita Pizza"></a>
+          <h3>Margherita Pizza</h3>
+          <p class="description">Tomato sauce, mozzarella, oregano</p>
+            <select name="size" id="size" onclick="CreatingPriceM()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceMargherita" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="pepperoni" >
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/Pepperoni.png" alt="Pepperoni Pizza"></a>
+          <h3>Pepperoni Pizza</h3>
+          <p class="description">Tomato sauce, mozzarella, spicy pepperoni salami</p>
+            <select name="size" id="sizeP" onclick="CreatingPriceP()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="pricePepperoni" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="capricciosa" >
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/Capricciosa.png" alt="Capricciosa Pizza"></a>
+          <h3>Capricciosa Pizza</h3>
+          <p class="description">Tomato sauce, mozzarella, corn, ham, oregano</p>
+            <select name="size" id="sizeCap" onclick="CreatingPriceCap()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceCapricciosa" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="calzone" >
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/Calzone.png" alt="Calzone Pizza"></a>
+          <h3>Calzone Pizza</h3>
+          <p class="description">Filled with mozzarella, ham, smoked cheese, oregano and tomato base</p>
+            <select name="size" id="sizeCal" onclick="CreatingPriceCal()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceCalzone" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="formaggi" >
+         <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/Cinque formaggi.jpg" alt="Formaggi Pizza"></a>
+          <h3>Cinque formaggi Pizza</h3>
+          <p class="description">Ricotta, blue cheese, mozzarella, cheddar, ripe goat cheese, cherry tomatoes, white oregano and fresh basil</p>
+            <select name="size" id="sizeF" onclick="CreatingPriceF()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceFormaggi" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="vienna" >
+         <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/Vienna.jpg" alt="Vienna Pizza"></a>
+          <h3>Vienna Pizza</h3>
+          <p class="description">Cream base, mushrooms, olives, red pepper, spinach, mozzarella, savory, garlic paste and a pinch of Maldon</p>
+            <select name="size" id="sizeV" onclick="CreatingPriceV()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceVienna" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="napoli" >
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/Napoli.png" alt="Napoli Pizza"></a>
+          <h3>Napoli Pizza</h3>
+          <p class="description">Green hot peppers, mushrooms, ham, tomato sauce, mozzarella and oregano</p>
+            <select name="size" id="sizeN" onclick="CreatingPriceN()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceNapoli" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="alTonno" >
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/Al Tonno.jpg" alt="Al Tonno Pizza"></a>
+          <h3>Al Tonno Pizza</h3>
+          <p class="description">Philadelphia base, tuna, capers, cherry tomato mix, mozzarella and devesil</p>
+            <select name="size" id="sizeA" onclick="CreatingPriceA()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceAlTonno" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="doubleEggs" >
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/DoubleEggs .png" alt="Double Eggs Pizza"></a>
+          <h3>Double Eggs Pizza</h3>
+          <p class="description">Tomato base, ham, mushrooms, mozzarella, two eggs and a pinch of oregano</p>
+            <select name="size" id="sizeD" onclick="CreatingPriceD()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceDoubleEggs " class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="laRegina" >
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pizza images/LaReginaSpecial.png" alt="La Regina Pizza"></a>
+          <h3>La Regina Special Pizza</h3>
+          <p class="description">Tomato sauce and carefully arranged: bacon, ham, chicken roll, mushrooms, pickles, mozzarella and oregano</p>
+            <select name="size" id="sizeL" onclick="CreatingPriceL()">
+              <option value="0">Choose size to show price!</option>
+              <option value="small">Small /350g/</option>
+              <option value="medium">Medium /550g/</option>
+              <option value="family">Family /1500g/</option>
+            </select>
+            <p id="priceLaRegina" class="price"></p>
+            <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+      </section>
+      <section id="pasta">
+        <h1 class="sectionHeader">Pasta</h1>
+        <hr class="sectionLine">
+        <article id="bolognese">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pasta/Bolognese.jpg" alt="Bolognese Pasta"></a>
+          <h3>Bolognese Pasta</h3>
+          <p class="description">Chopped pork and beef with tomato sauce, carrot, onion, thyme, celery, garlic, parsley, parmesan, basil and wine</p>
+          <p class="price">8.99$ /400g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="carbonara">
+         <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pasta/Carbonara.jpg" alt="Carbonara Pasta"></a>
+          <h3>Carbonara Pasta</h3>
+          <p class="description">Mushrooms, garlic, bacon, butter, olive oil, cream, cognac, egg, parmesan</p>
+          <p class="price">8.99$ /400g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="italianStyle">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pasta/Italian style.jpg" alt="Italian style Pasta"></a>
+          <h3>Italian style Pasta</h3>
+          <p class="description">Pork meatballs with onion, garlic, parsley, carrot and basil tomato sugo, fresh onion and parmesan</p>
+          <p class="price">10.99$ /400g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="amsterdam">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pasta/Amsterdam.jpg" alt="Amsterdam Pasta"></a>
+          <h3>Amsterdam Pasta</h3>
+          <p class="description">Tomato sauce, ragout of minced pork, mushrooms, prosciutto, ham, pickles, cheese and mozzarella</p>
+          <p class="price">11.99$ /400g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="spicyChicken">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pasta/Spicy chicken.jpg" alt="Spicy chicken Pasta"></a>
+          <h3>Spicy chicken Pasta</h3>
+          <p class="description">Chicken fillet, bacon, cream, onion, mushrooms, red peppers, fresh onion, garlic, butter, jalapeno peppers, ripe goat cheese and parmesan flakes</p>
+          <p class="price">12.50$ /400g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="calamarata">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Pasta/Calamarata.jpg" alt="Calamarata Pasta"></a>
+          <h3>Calamarata Pasta</h3>
+          <p class="description">Squid, sun-dried tomatoes, sour cream, basil, onions, cherry tomatoes, fresh onions and butter</p>
+          <p class="price">13.99$ /360g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+      </section>
+      <section id="desserts">
+        <h1 class="sectionHeader">Deserts</h1>
+        <hr class="sectionLine">
+        <article id="brownie">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Desserts/Brownie1.jpg" alt="Brownie"></a>
+          <h3>Chocolate brownie</h3>
+          <p class="description">Our classic Choco Chip Brownie is a gooey chocolate brownie loaded with dark chocolate chips</p>
+          <p class="price">2.99$ /80g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="chocolateCake">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Desserts/Chocolate cake.jpg" alt="Chocolate cake"></a>
+          <h3>Chocolate cake</h3>
+          <p class="description">Freshly baked two layer chocolate cake with a delicious chocolate filling</p>
+          <p class="price">4.50$ /100g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="tiramisu">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Desserts/Tiramisu.jpg" alt="Tiramisu"></a>
+          <h3>Tiramisu</h3>
+          <p class="description">A super fluffy and delectable tiramisu that is loaded up with mascarpone cheese, coffee, and chocolate</p>
+          <p class="price">4.50$ /100g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="cheesecake">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Desserts/Cheesecake.jpg" alt="Cheesecake"></a>
+          <h3>Cheesecake</h3>
+          <p class="description">A classic cheesecake that combines the delicate taste of cream cheese and cherry jam.</p>
+          <p class="price">3.50$ /90g/</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+      </section>
+      <section id="drinks">
+        <h1 class="sectionHeader">Drinks</h1>
+        <hr class="sectionLine">
+        <article id="fiji">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Drinks/Fiji water.jpg" alt="Fiji water"></a>
+          <h3>Fiji Bottle</h3>
+          <p class="description">Fiji water bottle 500ml</p>
+          <p class="price">2.50$</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="orangeFresh">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Drinks/Orange Fresh.jpg" alt="Orange Fresh"></a>
+          <h3>Orange Fresh</h3>
+          <p class="description">Orange Fresh 500ml</p>
+          <p class="price">3.50$</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="coca-colaBottle">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Drinks/Coca-cola bottle.jpg" alt="Coca-Cola bottle"></a>
+          <h3>Coca-Cola Bottle</h3>
+          <p class="description">Coca-Cola bottle 500ml</p>
+          <p class="price">2.00$</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="coca-colaCan">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Drinks/Coca-cola can.png" alt="Coca-Cola can"></a>
+          <h3>Coca-Cola Can</h3>
+          <p class="description">Coca-Cola can 330ml</p>
+          <p class="price">1.50$</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="coca-colaZeroBottle">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Drinks/Coca-cola zero bottle.jpg" alt="Coca-Cola zero bottle"></a>
+          <h3>Coca-Cola Zero Bottle</h3>
+          <p class="description">Coca-Cola Zero bottle 500ml</p>
+          <p class="price">2.00$</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="coca-colaZeroCan">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Drinks/Coca-cola no sigar can.png" alt="Coca-Cola Zero can"></a>
+          <h3>Coca-Cola Zero Can</h3>
+          <p>Coca-Cola Zero can 330ml</p>
+          <p class="price">1.50$</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="fantaBottle">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Drinks/fanta bottle.jpg" alt="Fanta bottle"></a>
+          <h3>Fanta Bottle</h3>
+          <p class="description">Fanta bottle 500ml</p>
+          <p class="price">2.00$</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+        <article id="fantaCan">
+          <a href="../Order Page/index.html" class="articulImg"><img src="../Pictures/Drinks/Fanta can.png" alt="Fanta can"></a>
+          <h3>Fanta Can</h3>
+          <p class="description">Fanta 330ml</p>
+          <p class="price">1.50$</p>
+          <a href="../Order Page/index.html#pizza"><button class="order">Order now</button></a>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section id="follow">
+        <h3>Follow us</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=bg" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section id="contactUs">
+        <h3>Contact us</h3>
+        <p>Email: LaRegina@gmail.com</p>
+        <p>Phone: +359 89 863 4120</p>
+      </section>
+      <section id="links">
+        <h3>Useful links</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="../Main Page/index.html">Home</a>
+            </li>
+            <li>
+              <a href="../Menu Page/index.html">Menu</a>
+            </li>
+            <li>
+              <a href="../Order Page/index.html">Make an order</a>
+            </li>
+            <li>
+              <a href="../About Us Page/index.html">About us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div> <h3>&copy;Copyright 2022, Powered by &#9760; Tsvetelina Yordanova</h3></div>
+    </footer>
+    <div id="arrow">
+      <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </div>
+    
+    <script>
+      function CreatingPriceM(){
+        var valuee = document. getElementById("size").value;
+        var text = document. getElementById("priceMargherita").textContent; 
+        var name = "priceMargherita";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"5.99$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"8.99$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"16.50$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      function CreatingPriceP(){
+        var valuee = document. getElementById("sizeP").value;
+        var text = document. getElementById("pricePepperoni").textContent; 
+        var name = "pricePepperoni";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"6.50$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"10.99$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"17.50$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      function CreatingPriceCap(){
+        var valuee = document. getElementById("sizeCap").value;
+        var text = document. getElementById("priceCapricciosa").textContent; 
+        var name = "priceCapricciosa";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"6.50$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"10.99$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"17.50$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      function CreatingPriceCal(){
+        var valuee = document. getElementById("sizeCal").value;
+        var text = document. getElementById("priceCalzone").textContent; 
+        var name = "priceCalzone";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"7.50$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"11.99$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"18.00$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      function CreatingPriceF(){
+        var valuee = document. getElementById("sizeF").value;
+        var text = document. getElementById("priceFormaggi").textContent; 
+        var name = "priceFormaggi";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"7.99$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"12.50$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"18.50$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      function CreatingPriceV(){
+        var valuee = document. getElementById("sizeV").value;
+        var text = document. getElementById("priceVienna").textContent; 
+        var name = "priceVienna";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"8.00$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"12.50$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"19.00$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+       function CreatingPriceN(){
+        var valuee = document. getElementById("sizeN").value;
+        var text = document. getElementById("priceNapoli").textContent; 
+        var name = "priceNapoli";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"8.00$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"12.50$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"19.00$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      function CreatingPriceA(){
+        var valuee = document. getElementById("sizeA").value;
+        var text = document. getElementById("priceAlTonno").textContent; 
+        var name = "priceAlTonno";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"8.99$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"12.99$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"19.99$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      function CreatingPriceD(){
+        var valuee = document. getElementById("sizeD").value;
+        var text = document. getElementById("priceDoubleEggs ").textContent; 
+        var name = "priceDoubleEggs ";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"8.99$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"12.99$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"19.99$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      function CreatingPriceL(){
+        var valuee = document. getElementById("sizeL").value;
+        var text = document. getElementById("priceLaRegina").textContent; 
+        var name = "priceLaRegina";
+        if(valuee == "small"){
+          document.getElementById(name).innerHTML = text.replace(text,"8.99$");
+        }else if(valuee == "medium"){
+          document.getElementById(name).innerHTML = text.replace(text,"12.99$");
+        }else if(valuee == "family"){
+          document.getElementById(name).innerHTML = text.replace(text,"19.99$");
+        }else if(valuee == "0"){
+          document.getElementById(name).innerHTML = text.replace(text,"");
+        }
+      }
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("secondNavHeader");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+        
+      } 
+      var ham = 0;
+      function HamburgerClick(){
+        if(ham == 0){
+          document.getElementById("right-section").style.display = "block";
+          document.getElementById("top-section").style.backgroundColor = "#EFEFEF";
+          document.getElementById("top-section").style.backgroundImage = "none";
+          ham++;
+        }
+        else if(ham == 1){
+          document.getElementById("right-section").style.display = "none";
+          document.getElementById("top-section").style.backgroundImage = "../Pictures/BackgroundNav.jpg";
+          document.getElementById("top-section").style.backgroundSize = "cover";
+          ham--;
+        }
+        document.getElementById("hamburger").style.color = "rgb(49, 48, 48)";
+      }
+
+    </script>
+</body>
+</html>

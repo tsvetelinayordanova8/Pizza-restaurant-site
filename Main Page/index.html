@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6a5b1aed9a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Logo/Logo for title bar.png" type="image/icon type">
+    <title>La Regina Pizza&Pasta</title>
+</head>
+<body>
+    <header id="main-header">
+        <section id="top-section">
+            <div id="left-section">
+              <img src="../Logo/1.png" alt="Header logo La Regna Restaurant">
+              <h1>La Regina</h1>
+              <a href="#" class="hamburger" onclick="HamburgerClick()">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </div>      
+              
+              <div id="right-section">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="../Main Page/index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li>
+                      <a href="../Menu Page/index.html"><i class="fa-solid fa-clipboard"></i> Menu</a>
+                    </li>
+                    <li>
+                      <a href="../Order Page/index.html"><i class="fa-solid fa-basket-shopping"></i> Make an order</a>
+                    </li>
+                    <li>
+                      <a href="../About Us Page/index.html"><i class="fa-solid fa-wheat-awn-circle-exclamation"></i> About us</a>
+                    </li>
+                  </ul>
+                </nav>                
+              </div>
+          </section>
+        <section id="slider">
+            <div class="container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators" id="dots">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../Pictures/First picture for slider.jpg" alt="Los Angeles" style="width:100%;">
+                    </div>
+              
+                    <div class="item">
+                     
+                        <img src="../Pictures/Advertisement.gif" width="1920px" height="1060px">
+                      
+                    </div>
+                  
+                    <div class="item">
+                      <img src="../Pictures/Third picture for slider.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+                  </div>
+              
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+        </section>
+    </header>
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+    <main id="main">
+     <section id="mainDeals">
+        <section id="dealsTitle">
+          <hr class="titleLine">
+            <h1>Popular Deals</h1>
+          <hr class="titleLine">
+        </section>
+        <article id="firstDeal" class="mainArticle">
+          <section id="firstDealImg">
+            <img src="../Pictures/Poster1.jpg" alt="First Deal Poster" class="mainPic">
+          </section>
+          <section id="firstDeal-info">
+            <img src="../Pictures/TextHolder.png" alt="" id="textHolder">
+            <p>Don't miss our HOT DEAL! Order now Medium pizza(Margharita, Pepperoni or Capricciosa) for only 8.99$.</p>
+            <a href="../Menu Page/index.html"><button class="buttonMain">See the menu&rarr;</button></a> 
+          </section>
+        </article>
+        <article id="SecondDeal" class="mainArticle">
+          <section id="secondDealImg">
+            <img src="../Pictures/Poster2.jpg" alt="Second Deal Poster" class="mainPic">
+          </section>
+          <section id="secondDeal-info">
+            <img src="../Pictures/TextHolder.png" alt="" id="textHolder">
+            <p>June promotion! Every second pizza ordered from "La Regina" get 50% off! Order now!</p>
+            <a href="../Menu Page/index.html"><button class="buttonMain">See the menu&rarr;</button></a> 
+          </section>
+        </article>
+        <article id="ThirdDeal" class="mainArticle">
+          <section id="thirdDealImg">
+            <img src="../Pictures/Poster3.jpg" alt="Second Deal Poster" class="mainPic">
+          </section>
+          <section id="thirdDeal-info">
+            <img src="../Pictures/TextHolder.png" alt="" id="textHolder">
+            <p>All the good is now here for you! Order every medium pizza from our menu with Coca-Cola can for only 10.99$!</p>
+            <a href="../Menu Page/index.html"><button class="buttonMain">See the menu&rarr;</button></a> 
+          </section>
+        </article>
+        <article id="FourthDeal" class="mainArticle">
+          <section id="fourthdDealImg">
+            <img src="../Pictures/Poster4.jpg" alt="Second Deal Poster" class="mainPic">
+          </section>
+          <section id="fourthDeal-info">
+            <img src="../Pictures/TextHolder.png" alt="" id="textHolder">
+            <p>Special Family Deal! For every family size pizza you get free Coca-Cola 500ml and a chocolate muffin!</p>
+            <a href="../Menu Page/index.html"><button class="buttonMain">See the menu&rarr;</button></a> 
+          </section>
+        </article>
+      </section>
+      <section id="mainAbout">
+        <img src="../Pictures/About.jpg" alt="About Image">
+        <div id="aboutInfo">
+          <h1>Some words about "La Regina"</h1>
+          <p>La Regina is a small chain of restaurants offering different types of pizza and pasta, made with a lot of 
+            experience and inspiration, in Italian style. Our team consists of young and eager people whose goal is to 
+            give this widespread cuisine a new life, hardened by the years of Italian tradition and style. In our restaurants 
+            you will find the best of Italian cuisine and the quality you deserve.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="follow">
+        <h3>Follow us</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=bg" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </nav>
+        
+      </section>
+      <section id="contactUs">
+        <h3>Contact us</h3>
+        <p>Email: LaRegina@gmail.com</p>
+        <p>Phone: +359 89 863 4120</p>
+      </section>
+      <section id="links">
+        <h3>Useful links</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="../Main Page/index.html">Home</a>
+            </li>
+            <li>
+              <a href="../Menu Page/index.html">Menu</a>
+            </li>
+            <li>
+              <a href="../Order Page/index.html">Make an order</a>
+            </li>
+            <li>
+              <a href="../About Us Page/index.html">About us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div> <h3>&copy;Copyright 2022, Powered by &#9760; Tsvetelina Yordanova</h3></div>
+    </footer> 
+
+<script>
+  window.onscroll = function() {myFunction()};
+  var ham = 0;
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+function HamburgerClick(){
+  if(ham == 0){
+    document.getElementById("right-section").style.display = "block";
+    document.getElementById("dots").style.display = "none";
+    document.getElementById("top-section").style.backgroundColor = "#D5D4D4";
+    document.getElementById("top-section").style.backgroundImage = "none";
+    ham++;
+  }
+  else if(ham == 1){
+    document.getElementById("right-section").style.display = "none";
+    document.getElementById("top-section").style.backgroundColor = null;
+    ham--;
+  }
+  document.getElementById("hamburger").style.color = "white";
+}
+</script>
+</body>
+
+</html>

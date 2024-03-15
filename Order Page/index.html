@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6a5b1aed9a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Logo/Logo for title bar.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Open+Sans:wght@400;500;600&family=Raleway:wght@200;300;400;500&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&family=Roboto+Slab:wght@300;400;500&family=Titillium+Web:wght@300;400;600&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>La Regina Order</title>
+    <script src="script.js"></script>
+</head>
+<body onload="PageLoad()">
+    <header>
+        <section id="top-section">
+            <div id="left-section">
+              <img src="../Logo/1.png" alt="Header logo La Regna Restaurant">
+              <h1>La Regina</h1>
+              <a href="#" class="hamburger" onclick="HamburgerClick()">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </div>      
+              
+              <div id="right-section">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="../Main Page/index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li>
+                      <a href="../Menu Page/index.html"><i class="fa-solid fa-clipboard"></i> Menu</a>
+                    </li>
+                    <li>
+                      <a href="../Order Page/index.html"><i class="fa-solid fa-basket-shopping"></i> Make an order</a>
+                    </li>
+                    <li>
+                      <a href="../About Us Page/index.html"><i class="fa-solid fa-wheat-awn-circle-exclamation"></i> About us</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </section>
+    </header>
+    <main>
+        <section id="itemImage">
+            <a href="#"><img src="../Pictures/First picture for slider.jpg" alt="" id="mainImage"></a>
+        </section>
+        <section id="ordering">
+          <section id="showingSections">
+            <input type="checkbox" value="pizza" id="pizzaCheckbox" name="pizza" onclick="ShowPizza()">
+            <label for="pizza">Pizza</label>
+            <input type="checkbox" value="pasta" id="pastaCheckbox" name="pasta" onclick="ShowPasta()">
+            <label for="pasta">Pasta</label>
+            <input type="checkbox" value="desserts" id="dessertsCheckbox" name="desserts" onclick="ShowDesserts()">
+            <label for="desserts">Desserts</label>
+            <input type="checkbox" value="drinks" id="drinksCheckbox" name="drinks" onclick="ShowDrinks()">
+            <label for="drinks">Drinks</label>
+              <h3 id="total">Total price</h3>
+              <p id="priceTotal">0.00$</p>
+              <button id="orderButton" onclick="PopUpOrder();TotalAmountChange()">Order now</button>
+              <button id="orderButton" onclick="ClearTotalPrice()">Clear</button>
+          </section>
+            <section id="pizza">
+               <section id="type">
+                    <div id="size">
+                        <form action="#">
+                            <label for="sizePizza">Pizza size</label><br>
+                            <select name="sizePizza" id="sizePizza" onchange ="TypePizzaPrice()">
+                                <option value="0">Choose pizza size...</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="family">Family</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div id="pizzaType">
+                        <form action="#">
+                            <label for="typePizza">Pizza type</label><br>
+                            <select name="typePizza" id="typePizza" onchange="TypePizzaPrice(); Info();">
+                                <option value="0">Choose pizza type...</option>
+                                <option value="margharita">Margharita</option>
+                                <option value="pepperoni">Pepperoni</option>
+                                <option value="capricciosa">Capricciosa</option>
+                                <option value="calzone">Calzone</option>
+                                <option value="formaggi">Cinque formaggi</option>
+                                <option value="vienna">Vienna</option>
+                                <option value="napoli">Napoli</option>
+                                <option value="alTonno">Al Tonno</option>
+                                <option value="doubleEggs">Double Eggs</option>
+                                <option value="laRegina">La Regina Special</option>
+                            </select>
+                        </form>
+                    </div>
+                    <h3 id="ingredients">Ingredients</h3>
+                    <p id="infoPizza"></p>
+               </section>
+               
+                <section id="infoPrice">
+                    <div id="quantityPizza">
+                        <h3>Quantity</h3>
+                        <div id="quantityButtons">
+                            <button class="rounded" onclick="QuantityMinus()">-</button>
+                            <p id="quantityPizzaText">1</p>
+                            <button class="rounded" onclick="QuantityPlus()">+</button>
+                        </div>
+                        
+                    </div>
+                    <div id="pricePizza">
+                        <h3>Price</h3>
+                        <p id="priceForPizza">0.00$</p>
+                    </div>
+                   <div class="addToTotalPrice">
+                    <button class="add" onclick="PizzaAdd()">Add</button>
+                    <button class="add" onclick="PizzaRemove()">Remove</button>
+                   </div>
+                    
+                </section>
+            </section>
+            <section id="pasta">
+              <section id="typePasta1">
+                  <div id="pastaType">
+                      <form action="#">
+                          <label for="typePasta">Pasta type</label><br>
+                          <select name="typePasta" id="typePasta" onchange="TypePastaPrice(); InfoPasta();">
+                              <option value="0">Choose pasta type...</option>
+                              <option value="bolognese">Bolognese Pasta</option>
+                              <option value="carbonara">Carbonara Pasta</option>
+                              <option value="italianStyle">Italian style Pasta</option>
+                              <option value="amsterdam">Amsterdam Pasta</option>
+                              <option value="spicyChicken">Spicy chicken Pasta</option>
+                              <option value="calamarata">Calamarata Pasta</option>
+                          </select>
+                      </form>
+                  </div>
+                   <h3 id="ingredientsPasta">Ingredients</h3>
+                   <p id="infoPasta"></p>
+              </section>
+              
+               <section id="infoPricePasta">
+                   <div id="quantityPasta">
+                       <h3>Quantity</h3>
+                       <div id="quantityButtonsPasta">
+                           <button class="rounded" onclick="QuantityMinusPasta()">-</button>
+                           <p id="quantityPastaText">1</p>
+                           <button class="rounded" onclick="QuantityPlusPasta()">+</button>
+                       </div>
+                       
+                   </div>
+                   <div id="pricePasta">
+                       <h3>Price</h3>
+                       <p id="priceForPasta">0.00$</p>
+                   </div>
+                   <div class="addToTotalPrice">
+                    <button class="addPasta" onclick="PastaAdd()">Add</button>
+                    <button class="addPasta" onclick="PastaRemove()">Remove</button>
+                   </div>
+                   
+
+                </section>
+           </section>
+           <section id="desserts">
+            <section id="typeDesserts1">
+                <div id="dessertsType">
+                    <form action="#">
+                        <label for="typeDesserts">Desserts types</label><br>
+                        <select name="typeDesserts" id="typeDesserts" onchange="TypeDessertPrice(); InfoDesserts();">
+                            <option value="0">Choose dessert type...</option>
+                            <option value="brawnie">Chocolate brownie</option>
+                            <option value="chocolateCake">Chocolate cake</option>
+                            <option value="tiramisu">Tiramisu</option>
+                            <option value="cheeseCake">Cheesecake</option>
+                        </select>
+                    </form>
+                </div>
+                 <h3 id="ingredientsDesserts">Information</h3>
+                 <p id="infoDesserts"></p>
+            </section>
+            
+             <section id="infoPriceDesserts">
+                 <div id="quantityDesserts">
+                     <h3>Quantity</h3>
+                     <div id="quantityButtonsDesserts">
+                         <button class="rounded" onclick="QuantityMinusDesserts()">-</button>
+                         <p id="quantityDessertsText">1</p>
+                         <button class="rounded" onclick="QuantityPlusDesserts()">+</button>
+                     </div>
+                     
+                 </div>
+                 <div id="priceDesserts">
+                     <h3>Price</h3>
+                     <p id="priceForDesserts">0.00$</p>
+                 </div>
+                 <div class="addToTotalPrice">
+                  <button class="addDesserts" onclick="DessertAdd()">Add</button>
+                  <button class="addDesserts" onclick="DessertsRemove()">Remove</button>
+                 </div>
+                 
+              </section>
+         </section>
+         <section id="drinks">
+          <section id="typeDrinks1">
+              <div id="drinksType">
+                  <form action="#">
+                      <label for="typeDrinks">Drinks types</label><br>
+                      <select name="typePasta" id="typeDrinks" onchange="TypeDrinksPrice(); InfoDrinks();">
+                          <option value="0">Choose pasta type...</option>
+                          <option value="fiji">Fiji Bottle</option>
+                          <option value="orangeFresh">Orange Fresh</option>
+                          <option value="coca-colaBottle">Coca-Cola Bottle</option>
+                          <option value="coca-colaCan">Coca-Cola Can</option>
+                          <option value="coca-colaZeroBottle">Coca-Cola Zero Bottle</option>
+                          <option value="coca-colaZeroCan">Coca-Cola Zero Can</option>
+                          <option value="fantaBottle">Fanta Bottle</option>
+                          <option value="fantaCan">Fanta Can</option>
+                      </select>
+                  </form>
+              </div>
+               <h3 id="ingredientsDrinks">Ingredients</h3>
+               <p id="infoDrinks"></p>
+          </section>
+          
+           <section id="infoPriceDrinks">
+               <div id="quantityDrinks">
+                   <h3>Quantity</h3>
+                   <div id="quantityButtonsDrinks">
+                       <button class="rounded" onclick="QuantityMinusDrinks()">-</button>
+                       <p id="quantityDrinksText">1</p>
+                       <button class="rounded" onclick="QuantityPlusDrinks()">+</button>
+                   </div>
+                   
+               </div>
+               <div id="priceDrinks">
+                   <h3>Price</h3>
+                   <p id="priceForDrinks">0.00$</p>
+               </div>
+               <div class="addToTotalPrice">
+                <button class="addDrinks" onclick="DriksAdd()">Add</button>
+                <button class="addDrinks" onclick="DriksRemove()">Remove</button>
+               </div>
+               
+            </section>
+       </section>
+        </section>
+    </main>
+    <footer>
+      <section id="follow">
+        <h3>Follow us</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=bg" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section id="contactUs">
+        <h3>Contact us</h3>
+        <p>Email: LaRegina@gmail.com</p>
+        <p>Phone: +359 89 863 4120</p>
+      </section>
+      <section id="links">
+        <h3>Useful links</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="../Main Page/index.html">Home</a>
+            </li>
+            <li>
+              <a href="../Menu Page/index.html">Menu</a>
+            </li>
+            <li>
+              <a href="../Order Page/index.html">Make an order</a>
+            </li>
+            <li>
+              <a href="../About Us Page/index.html">About us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div> <h3>&copy;Copyright 2022, Powered by &#9760; Tsvetelina Yordanova</h3></div>
+    </footer>
+    <section id="form">
+      <h1>Make an order</h1>
+      <p>The total amount for your order is: <span id="totalAmount"></span></p>
+      <div id="content">
+        <form id="form1" action="#" method="POST" id="orderForm" onsubmit="Validate()">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Name..."><br>
+          <label for="family">Family</label><br>
+          <input type="text" id="family" name="family" placeholder="Family..."><br>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" placeholder="Email..."><br>
+          <label for="phone">Phone</label><br>
+          <input type="tel" id="phone" placeholder="Phone..."><br>
+          <label for="address">Address</label><br>
+          <input type="text" id="address" placeholder="Address..."><br>
+          <label for="code">Enter here your secret code for ordering(5 symbols)</label>
+          <input type="password" name="code" id="code" placeholder="Secret code...">
+          <input type="button" value="Submit" class="formButton" onclick="Validate(); Submit();"/>
+          <input type="button" value="Close" class="formButton" onclick="Close()">
+        </form>
+      </div>
+      
+    </section>
+</body>
+</html>

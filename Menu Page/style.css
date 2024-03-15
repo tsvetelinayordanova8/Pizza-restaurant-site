@@ -1,0 +1,759 @@
+*{
+    margin: 0; 
+    padding: 0;  
+}
+html{
+  scroll-behavior: smooth;
+}
+header{
+    margin: 0; 
+    padding: 0;  
+}
+#top-section{
+    padding: 0.5% 0;
+    background-image: url("../Pictures/BackgroundNav.jpg");
+    background-size: cover;
+}
+#left-section{
+    width: 30%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+ }
+ #right-section{
+    width:68%;
+    display: inline-block;
+ }
+ #top-section img{
+    width: 12%;
+    height: auto;
+    margin-left: 10%;
+    display: inline-block;
+ }
+ #top-section h1{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+ }
+ #top-section nav{
+   vertical-align: middle;
+ }
+ #top-section nav ul{
+    text-align: right;
+    list-style: none;
+ }
+ #top-section nav ul li{
+  display: inline-block;
+  padding-left: 2%;
+ }
+ #top-section nav ul li:nth-last-child(1){
+   padding-right: 2%;
+ }
+ #top-section nav ul li a{
+  color: #333333;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: normal;
+ }
+ #top-section nav ul li a:hover{
+  animation: drop-in 1800ms;
+  }
+#headerImage img{
+      width: 100%;
+      height: auto;
+}
+#secondNavHeader nav{
+  overflow: hidden;
+  text-align: center;
+}
+#secondNavHeader nav::after{
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-name: progress;
+  background: #111;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 80px;
+
+}
+
+#secondNavHeader ul {
+  list-style: none;
+  margin:0;
+}
+#secondNavHeader nav ul li{
+    display: inline-block;
+    padding: 0.5% 0;
+    width: 8%;
+}
+#secondNavHeader nav ul li:nth-last-child(1){
+    border:none;
+}
+
+  #secondNavHeader ul li a {
+    padding: 5% 5%;
+    display: block;
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+    font-size: 20px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 0% 0;
+  }
+  #secondNavHeader ul li:hover{
+    background-color: rgb(191, 190, 190);
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+  }
+  #secondNavHeader ul li a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+   
+  }
+  main{
+    margin: 1% 10%;
+  }
+  main article{
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    height: 30%;
+    border-radius: 5%;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  }
+  main article img{
+    width: 100%;
+    border-radius: 2%;
+  }
+  main .description{
+    font-family: Raleway 500;
+    padding-top: 2%;
+  }
+  main article h3{
+    font-family: 'Roboto Slab', serif;
+  }
+  main .price{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  main #margharita, #formaggi, #doubleEggs, #bolognese, #spicyChicken, #brownie, #fiji, #coca-colaZeroBottle{
+    margin-left: 0;
+  } 
+  main article h3,p{
+    padding: 0 5%;
+  }
+  main select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  #margharita select{
+    margin-top: 7%;
+  }
+  #doubleEggs select{
+    margin-top: 7%;
+  }
+  #napoli select{
+    margin-top: 6%;
+  }
+  #alTonno select{
+    margin-top: 6%;
+  }
+  #carbonara p:nth-last-child(2){
+    margin-top: 10%;
+  }
+  #calamarata p:nth-last-child(2){
+    margin-top: 10%;
+  }
+  #chocolateCake p:nth-last-child(2){
+    margin-top: 10%;
+
+  }
+
+ .sectionHeader{
+   font-size: 30px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 600;
+   margin-left: 1%;
+   border-right: solid 3px rgba(26, 26, 26, 0.75);
+   white-space: nowrap;
+   overflow: hidden;    
+   color: rgb(61, 61, 61);
+   animation: animated-text 2s steps(29,end) 1s 1 normal both,
+   animated-cursor 600ms steps(29,end) infinite;
+ }
+ .sectionLine{
+   width: 10%;
+   height: 3px;
+   background-color: black;
+   border-width:0;
+   margin-left: 1%;
+ }
+ /*Hover on articul Images*/
+
+ #margharita .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/MargharitaHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #pepperoni .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/PepperoniHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #capricciosa .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/CapricciosaHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #calzone .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/CalzoneHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #formaggi .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/Cinque\ formaggiHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #vienna .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/ViennaHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #napoli .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/NapoliHover.jpg");
+  width: 100%;
+  height: auto; 
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #alTonno .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/Al\ TonnoHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #doubleEggs .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/DoubleEggsHover\ .jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #laRegina .articulImg:hover{
+  content:url("../Pictures/Pizza images/PizzaHover/LaReginaSpecialHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #bolognese .articulImg:hover{
+  content:url("../Pictures/Pasta/PastaHover/BologneseHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #carbonara .articulImg:hover{
+  content:url("../Pictures/Pasta/PastaHover/CarbonaraHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #italianStyle .articulImg:hover{
+  content:url("../Pictures/Pasta/PastaHover/ItalianStyleHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #amsterdam .articulImg:hover{
+  content:url("../Pictures/Pasta/PastaHover/AmsterdamHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #spicyChicken .articulImg:hover{
+  content:url("../Pictures/Pasta/PastaHover/SpicyChickenHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #calamarata .articulImg:hover{
+  content:url("../Pictures/Pasta/PastaHover/CalamarataHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #brownie .articulImg:hover{
+  content:url("../Pictures/Desserts/DessertsHover/Brownie1Hover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #chocolateCake .articulImg:hover{
+  content:url("../Pictures/Desserts/DessertsHover/Chocolate\ cakeHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #tiramisu .articulImg:hover{
+  content:url("../Pictures/Desserts/DessertsHover/TiramisuHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #cheesecake .articulImg:hover{
+  content:url("../Pictures/Desserts/DessertsHover/CheesecakeHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #fiji .articulImg:hover{
+  content:url("../Pictures/Drinks/DrinksHover/Fiji\ waterHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #orangeFresh .articulImg:hover{
+  content:url("../Pictures/Drinks/DrinksHover/Orange\ FreshHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #coca-colaBottle .articulImg:hover{
+  content:url("../Pictures/Drinks/DrinksHover/Coca-cola\ bottleHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #coca-colaCan .articulImg:hover{
+  content:url("../Pictures/Drinks/DrinksHover/Coca-cola\ canHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #coca-colaZeroBottle .articulImg:hover{
+  content:url("../Pictures/Drinks/DrinksHover/Coca-cola\ zero\ bottleHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #coca-colaZeroCan .articulImg:hover{
+  content:url("../Pictures/Drinks/DrinksHover/Coca-cola\ no\ sigar\ canHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #fantaBottle .articulImg:hover{
+  content:url("../Pictures/Drinks/DrinksHover/fanta\ bottleHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ #fantaCan .articulImg:hover{
+  content:url("../Pictures/Drinks/DrinksHover/Fanta\ canHover.jpg");
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: -1.9%;
+ }
+ 
+
+/* Select */
+#pizza select {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 14x;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 2% 3%;
+  margin-left: 18%;
+  width: 65%;
+  position: relative;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+}
+
+#pizza select:focus-visible {
+  box-shadow: #222222 0 0 0 0.5px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+#pizza select:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+#pizza select:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Button */
+.order {
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto Flex', sans-serif;  
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  vertical-align: middle;
+  margin-left: 33%;
+  margin-bottom: 5%;
+}
+.order:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+.order:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+.order:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+.order:focus {
+  outline: 1px transparent;
+}
+.divider
+{
+	position: relative;
+	margin: 2% 0;
+
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+.progress {
+  background: rgb(255, 255, 255);
+  height: 0.1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress::before {
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-name: progress;
+  background: #111;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 10%;
+}
+footer{
+  background: rgb(32, 36, 43);
+  padding: 0 20%;
+  margin: 0;
+}
+footer section{
+  width: 27%;
+  display: inline-block;
+  vertical-align: top;
+}
+footer section h3{
+  color: white;
+  font-family: Kanit;
+  font-weight: 400;
+}
+footer #follow nav ul li{
+  display: inline-block;
+  margin-left: 2%;
+}
+footer #follow nav ul li a{
+  font-size: 22px;
+}
+footer #follow nav ul li a:nth-last-child(1){
+  color: #1DA1F2;
+}
+footer #follow nav ul li a:nth-last-child(2){
+  color: #405DE6;
+}
+footer #follow nav ul li a:nth-last-child(3){
+  color: #4267B2;
+}
+footer #contactUs p{
+  padding:0;
+  margin-bottom: 2%;
+  color: rgb(171, 170, 173);
+  font-family: Work Sans;
+}
+footer #links nav ul li{
+  list-style-type: none;
+}
+footer #links nav ul li a{
+  text-decoration: none;
+  font-family: Work Sans;
+}
+footer div h3{
+  color: white;
+  font-size: 14px;
+  font-family: Work Sans;
+  font-weight: 400;
+  padding-bottom: 2%;
+  margin:0;
+}
+.hamburger{
+  display: none;
+}
+#arrow{
+  position: fixed;
+  top: 75%;
+  right: 1%;
+  font-size: 3vw;
+}
+#arrow a{
+  text-decoration: none;
+  list-style: none;
+  color: rgb(49, 48, 48);
+}
+
+@keyframes progress {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1430px);
+  }
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 9%;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(44, 45, 44, 0.75);}
+  to{border-right-color: transparent;}
+}
+@keyframes drop-in {
+  from {
+    transform:
+      rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform:
+      rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 980px){
+  
+  #left-section h1{
+    font-size: 20px;
+  }
+  #left-section {
+    width: 100%;
+  }
+  #left-section img{
+    width: 8%;
+    margin-left: 1%;
+  }
+  .hamburger{
+    display: inline-block;
+    float:right;
+    font-size: 35px;
+    padding-top: 1%;
+    padding-right: 2%;
+    color:rgb(49, 48, 48);
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .hamburger:visited{
+    color:rgb(49, 48, 48);
+  }
+  #right-section{
+    width: 100%;
+    display: none;
+  }
+  #top-section nav ul li a{
+    font-size: 25px;
+  }
+  #top-section nav ul{
+    padding: 0 15%;
+  }
+  #top-section nav ul li{
+    display: block;
+    z-index: 1;
+    text-align: center;
+    border-top: solid 1px rgb(49, 48, 48);
+    padding: 2% 0%;
+  }
+  #top-section nav ul li:nth-last-child(1) {
+    padding-right: 0;
+  }
+  main{
+    margin: 0 0;
+  }
+  #secondNavHeader nav ul li a{
+     font-size: 2vw;
+  }
+  main article{
+    width: 48%;
+    height: auto;
+  }
+   main #margharita, #formaggi, #doubleEggs, #bolognese, #spicyChicken, #brownie, #fiji, #coca-colaZeroBottle{
+    margin-left: 1%;
+  }
+  #pizza .description{
+    font-size: 3vw;
+  }
+  #pizza select{
+    text-align: center;
+  }
+  #pepperoni select{
+    margin-top: 7%;
+  }
+  #capricciosa select{
+    margin-top: 5%;
+  }
+  #laRegina select{
+    margin-top: 7%;
+  }
+  #bolognese .price{
+    margin-top: 10%;
+  }
+  #spicyChicken .price{
+    margin-top: 6%;
+  }
+  #brownie .price{
+    margin-top: 10%;
+  }
+  footer{
+   padding: 0;
+   padding-left: 3%;
+ }
+ footer section{
+   margin-left: 1%;
+ }
+ #arrow a{
+  font-size: 6vw;
+}
+#arrow{
+  top:60%;
+}
+
+
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 20%;}
+  }
+
+  @keyframes progress {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(70vw);
+    }
+  }
+}
+@media (max-width: 465px){
+  main article{
+    width: 100%;
+  }
+  #aboutInfo{
+    width: 100%;
+  }
+  #mainAbout p, h1{
+    text-align: center;
+  }
+  #aboutInfo p{
+    margin: 0 10%;
+    font-size: 3vw;
+  }
+  footer section{
+    width: 100%;
+  }
+  #secondNavHeader nav ul li a{
+    font-size: 2.3vw;
+ }
+ #arrow a{
+  font-size: 7vw;
+}
+}

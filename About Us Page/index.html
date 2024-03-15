@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6a5b1aed9a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Logo/Logo for title bar.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Open+Sans:wght@400;500;600&family=Raleway:wght@200;300;400;500&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&family=Roboto+Slab:wght@300;400;500&family=Titillium+Web:wght@300;400;600&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>About La Regina</title>
+</head>
+<body>
+    <header>
+        <section id="top-section">
+            <div id="left-section">
+              <img src="../Logo/1.png" alt="Header logo La Regna Restaurant">
+              <h1>La Regina</h1>
+              <a href="#" class="hamburger" onclick="HamburgerClick()">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </div>      
+              <div id="right-section">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="../Main Page/index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li>
+                      <a href="../Menu Page/index.html"><i class="fa-solid fa-clipboard"></i> Menu</a>
+                    </li>
+                    <li>
+                      <a href="../Order Page/index.html"><i class="fa-solid fa-basket-shopping"></i> Make an order</a>
+                    </li>
+                    <li>
+                      <a href="../About Us Page/index.html"><i class="fa-solid fa-wheat-awn-circle-exclamation"></i> About us</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </section>
+          <section id="headerImage">
+              <img src="../Pictures/PosterAboutUs.jpg" alt="About us Poster Image">
+          </section>
+    </header>
+    <main>
+        <div class="skew-c"></div>
+        <section class="colour-block">
+          <section class="sectionImg">
+            <img src="../Pictures/Third page section photos/About us.jpg" alt="About us Image">
+          </section>
+          <section class="sectionText">
+            <h1>La Regina</h1>
+            <p>La Regina introduced fresh and a innovative approach to pizza by offering pizza lovers different delicious toppings that 
+              are richer and more sumptuous than those of our competitors, as well as a selection of great tasting cheese blends 
+              and inviting appetizers to enhance the total pizza experience. Our ingredients matter. Whether it's our signature 
+              sauce, toppings, our original fresh dough, or even the box itself, we invest in our ingredients to ensure that we 
+              always give you the finest quality pizza. The most essential ingredient for great tasting pizzas and pastas is the 
+              highest quality cheese.</p>
+          </section>
+        </section>
+        <div class="skew-cc"></div>
+        <section class="white-block">
+          <section class="sectionText">
+            <h1>Real Ingredients</h1>
+            <p>We believe in Here and Now. To us, that means fresh dough, NEVER FROZEN, made in-house each day simply from 
+              unbleached flour, filtered water, extra-virgin olive oil, salt, and a touch of sugar. No chemicals. No additives. 
+              No kidding.</p>
+          </section>
+          <section class="sectionImg">
+            <img src="../Pictures/Third page section photos/Ingredients.jpg" alt="Ingredients Image">
+          </section>
+        </section>
+        <div class="skew-c"></div>
+        <section class="colour-block">
+          <section class="sectionImg">
+            <img src="../Pictures/Third page section photos/Pizza box.jpg" alt="Pizza Box Image">
+          </section>
+          <section class="sectionText">
+            <h1>Eco Friendly Packing</h1>
+            <p>We believe that the decisions we make for the Earth are extremely important, too. That’s why we’ve gone to great 
+            lengths to make sure that, wherever practical, our packaging is recyclable and compostable.</p>
+          </section>
+        </section>
+    </main>
+    <footer>
+      <section id="follow">
+        <h3>Follow us</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=bg" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section id="contactUs">
+        <h3>Contact us</h3>
+        <p>Email: LaRegina@gmail.com</p>
+        <p>Phone: +359 89 863 4120</p>
+      </section>
+      <section id="links">
+        <h3>Useful links</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="../Main Page/index.html">Home</a>
+            </li>
+            <li>
+              <a href="../Menu Page/index.html">Menu</a>
+            </li>
+            <li>
+              <a href="../Order Page/index.html">Make an order</a>
+            </li>
+            <li>
+              <a href="../About Us Page/index.html">About us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div> <h3>&copy;Copyright 2022, Powered by &#9760; Tsvetelina Yordanova</h3></div>
+    </footer>
+
+    <script>
+      var ham = 0;
+        function HamburgerClick(){
+          if(ham == 0){
+            document.getElementById("right-section").style.display = "block";
+            document.getElementById("top-section").style.backgroundColor = "#EFEFEF";
+            document.getElementById("top-section").style.backgroundImage = "none";
+            ham++;
+          }
+          else if(ham == 1){
+            document.getElementById("right-section").style.display = "none";
+            document.getElementById("top-section").style.backgroundImage = "../Pictures/BackgroundNav.jpg";
+            document.getElementById("top-section").style.backgroundSize = "cover";
+            ham--;
+          }
+          document.getElementById("hamburger").style.color = "rgb(49, 48, 48)";
+        }
+    </script>
+</body>
+</html>
